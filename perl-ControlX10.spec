@@ -20,8 +20,6 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
 The CM11A is a bi-directional X10 controller that connects to a serial
 port and transmits commands via AC power line to X10 devices. This
@@ -31,9 +29,9 @@ Interface Communication Protocol accepted by the CM11A.
 %description -l pl
 CM11A jest dwukierunkowym kontrolerem X10 pod³±czanym do portu
 szeregowego. Steruje on urz±dzeniami zgodnymi z X10 transmituj±c
-polecenia po linni zasilania AC. Ten modu³ t³umaczy polecenia z
+polecenia po linii zasilania AC. Ten modu³ t³umaczy polecenia z
 postaci czytelnej dla cz³owieka (np 'A2', 'AJ') na polecenia
-interfejsu ICP akcepotowalne przez CM11A.
+interfejsu ICP akceptowalne przez CM11A.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -59,7 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-# use macros:
+%dir %{perl_vendorlib}/ControlX10
 %{perl_vendorlib}/ControlX10/CM11.pm
-#%%{perl_vendorarch}/...
 %{_mandir}/man3/*
