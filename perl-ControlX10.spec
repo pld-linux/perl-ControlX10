@@ -6,7 +6,7 @@
 %define		pdir	ControlX10
 %define		pnam	CM11
 Summary:	Control X10 via CM11A device
-Summary(pl):	Obs³uga X10 przez urz±dzenie CM11A
+Summary(pl.UTF-8):   ObsÅ‚uga X10 przez urzÄ…dzenie CM11A
 Name:		perl-ControlX10
 Version:	2.09
 Release:	0.1
@@ -26,11 +26,11 @@ port and transmits commands via AC power line to X10 devices. This
 module translates human-readable commands (eg. 'A2', 'AJ') into the
 Interface Communication Protocol accepted by the CM11A.
 
-%description -l pl
-CM11A jest dwukierunkowym kontrolerem X10 pod³±czanym do portu
-szeregowego. Steruje on urz±dzeniami zgodnymi z X10 transmituj±c
-polecenia po linii zasilania AC. Ten modu³ t³umaczy polecenia z
-postaci czytelnej dla cz³owieka (np 'A2', 'AJ') na polecenia
+%description -l pl.UTF-8
+CM11A jest dwukierunkowym kontrolerem X10 podÅ‚Ä…czanym do portu
+szeregowego. Steruje on urzÄ…dzeniami zgodnymi z X10 transmitujÄ…c
+polecenia po linii zasilania AC. Ten moduÅ‚ tÅ‚umaczy polecenia z
+postaci czytelnej dla czÅ‚owieka (np 'A2', 'AJ') na polecenia
 interfejsu ICP akceptowalne przez CM11A.
 
 %prep
