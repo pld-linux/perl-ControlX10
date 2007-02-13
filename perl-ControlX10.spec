@@ -6,7 +6,7 @@
 %define		pdir	ControlX10
 %define		pnam	CM11
 Summary:	Control X10 via CM11A device
-Summary(pl.UTF-8):   Obsługa X10 przez urządzenie CM11A
+Summary(pl.UTF-8):	Obsługa X10 przez urządzenie CM11A
 Name:		perl-ControlX10
 Version:	2.09
 Release:	0.1
